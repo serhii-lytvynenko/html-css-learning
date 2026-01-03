@@ -1,80 +1,93 @@
 <!DOCTYPE html>
 <html lang="uk-UA">
+
 <head>
-  <!-- 1. Character encoding first -->
   <meta charset="UTF-8">
-
-  <!-- 2. Responsive viewport for mobile-first -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-  <!-- 3. Page title -->
-  <title>MY SEARCH ENGINE</title>
-
-  <!-- 4. SEO meta description -->
-  <meta name="description" content="MY SEARCH ENGINE: The fastest, smartest search engine for discovering information on the web.">
-
-  <!-- 5. SEO keywords (optional, minimal impact nowadays) -->
-  <meta name="keywords" content="search engine, fast search, web search, AI search">
-
-  <!-- 6. Author & robots -->
-  <meta name="author" content="Your Company Name">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="canonical" href="https://example.com/gym-landing-page/">
+  <link rel="alternate" hreflang="en" href="https://example.com/gym-landing-page/">
   <meta name="robots" content="index, follow">
 
-  <!-- 7. Open Graph for social media -->
-  <meta property="og:title" content="MY SEARCH ENGINE">
-  <meta property="og:description" content="The fastest, smartest search engine for discovering information on the web.">
+  <title>FitLife Gym – Transform Your Body and Mind</title>
+  <meta name="description"
+    content="Join FitLife Gym today! Personal training, group classes, and state-of-the-art equipment to help you reach your fitness goals.">
+
+  <meta property="og:title" content="FitLife Gym – Transform Your Body and Mind">
+  <meta property="og:description"
+    content="Join FitLife Gym today! Personal training, group classes, and state-of-the-art equipment to help you reach your fitness goals.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.mysearchengine.com/">
-  <meta property="og:image" content="https://www.mysearchengine.com/assets/og-image.png">
+  <meta property="og:url" content="https://example.com/gym-landing-page/">
+  <meta property="og:site_name" content="FitLife Gym">
+  <meta property="og:image" content="https://example.com/images/og-gym.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
 
-  <!-- 8. Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="MY SEARCH ENGINE">
-  <meta name="twitter:description" content="The fastest, smartest search engine for discovering information on the web.">
-  <meta name="twitter:image" content="https://www.mysearchengine.com/assets/og-image.png">
-  <meta name="twitter:site" content="@MySearchEngine">
+  <meta name="twitter:title" content="FitLife Gym – Transform Your Body and Mind">
+  <meta name="twitter:description"
+    content="Join FitLife Gym today! Personal training, group classes, and state-of-the-art equipment to help you reach your fitness goals.">
+  <meta name="twitter:image" content="https://example.com/images/twitter-gym.jpg">
 
-  <!-- 9. Favicon and icons -->
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-touch-icon-114x114.png">
 
-  <!-- 10. Preconnect & DNS-prefetch for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="dns-prefetch" href="https://www.google-analytics.com">
+  <link rel="preconnect" href="https://www.googletagmanager.com">
 
-  <!-- 11. Stylesheets (minimized & deferred if possible) -->
-  <link rel="stylesheet" href="/css/styles.min.css" media="all">
+  <link rel="preload" href="/css/style.css" as="style">
+  <link rel="preload" href="/css/responsive.css" as="style">
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    as="style">
 
-  <!-- 12. Critical inline CSS for above-the-fold content (optional, ultra-optimized) -->
-  <style>
-    /* Example critical styles */
-    body { margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
-  </style>
+  <link rel="prefetch" href="/gym-class-schedule.html">
+  <link rel="prefetch" href="/personal-training.html">
 
-  <!-- 13. Analytics and tag manager (loaded asynchronously) -->
-  <script async src="https://www.googletagmanager.com/gtm.js?id=GTM-XXXXXX"></script>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/responsive.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
 
-  <!-- 14. Feature & SEO optimizations -->
-  <meta name="theme-color" content="#0051BA">
-  <link rel="canonical" href="https://www.mysearchengine.com/">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 
-  <!-- 15. Optional: preload critical assets for faster LCP -->
-  <link rel="preload" href="/fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="/js/main.js" as="script">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Gym",
+    "name": "FitLife Gym",
+    "image": "https://example.com/images/og-gym.jpg",
+    "url": "https://example.com/gym-landing-page/",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "123 Fitness St",
+      "addressLocality": "Kyiv",
+      "postalCode": "01001",
+      "addressCountry": "UA"
+    },
+    "telephone": "+380123456789",
+    "openingHours": "Mo-Su 06:00-22:00"
+  }
+  </script>
 </head>
 
 <body>
 
   <header>
     <nav>
-        <li><a href="#">Gmail</a></li>
-        <li><a href="#">Зображення</a></li>
-        <li><a href="#">Увійти</a></li>
+      <li><a href="#">Gmail</a></li>
+      <li><a href="#">Зображення</a></li>
+      <li><a href="#">Увійти</a></li>
     </nav>
   </header>
 
@@ -105,29 +118,30 @@
     <p>Нідерланди</p>
 
     <nav>
-        <li><a href="#">Про Google</a></li>
-        <li><a href="#">Реклама</a></li>
-        <li><a href="#">Для бізнесу</a></li>
-        <li><a href="#">Як працює Пошук</a></li>
+      <li><a href="#">Про Google</a></li>
+      <li><a href="#">Реклама</a></li>
+      <li><a href="#">Для бізнесу</a></li>
+      <li><a href="#">Як працює Пошук</a></li>
     </nav>
 
     <nav>
-        <li><a href="#">Конфіденційність</a></li>
-        <li><a href="#">Умови</a></li>
-        <li><a href="#">Налаштування</a></li>
+      <li><a href="#">Конфіденційність</a></li>
+      <li><a href="#">Умови</a></li>
+      <li><a href="#">Налаштування</a></li>
     </nav>
   </footer>
 
   <section>
     <h2>Поділитися</h2>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">WhatsApp</a></li>
-      <li><a href="#">X</a></li>
-      <li><a href="#">Електронна пошта</a></li>
-      <li><button>Натисніть, щоб скопіювати посилання</button></li>
+    <li><a href="#">Facebook</a></li>
+    <li><a href="#">WhatsApp</a></li>
+    <li><a href="#">X</a></li>
+    <li><a href="#">Електронна пошта</a></li>
+    <li><button>Натисніть, щоб скопіювати посилання</button></li>
 
     <p>Посилання для доступу</p>
   </section>
 
 </body>
+
 </html>
